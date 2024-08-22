@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
         textTheme: GoogleFonts.quicksandTextTheme(),
       ),
       routes: {
-        '/home': (context) => const HomePage(),
+        '/home': (context) => HomePage(),
       },
       initialRoute: '/home',
     );

@@ -31,12 +31,11 @@ class AddAssetDialogController extends GetxController {
 }
 
 class AddAssetDialog extends StatelessWidget {
-  const AddAssetDialog({super.key});
-
+  AddAssetDialog({super.key});
+  final AddAssetDialogController dialogController =
+      Get.put(AddAssetDialogController());
   @override
   Widget build(BuildContext context) {
-    final AddAssetDialogController dialogController =
-        Get.put(AddAssetDialogController());
     return GetX<AddAssetDialogController>(
       builder: (DisposableInterface controller) {
         return Center(
@@ -140,7 +139,7 @@ class AddAssetDialog extends StatelessWidget {
                   const SizedBox(height: 16),
                   ElevatedButton(
                     onPressed: () {
-                      Get.find<AssetController>().addAsset(
+                      Get.find<AssetsController>().addTrackedAsset(
                         name: controller.selectedAsset.value,
                         amount: controller.assetValue.value,
                       );

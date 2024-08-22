@@ -9,5 +9,5 @@ Future<void> registerServices() async {
 
 Future<void> registerControllers() async {
   // Register controllers
-  Get.put(AssetController());
+  Get.put(AssetsController());
 }
