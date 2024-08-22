@@ -29,7 +29,7 @@ class HomePage extends StatelessWidget {
         IconButton(
           onPressed: () {
             Get.dialog(
-              AddAssetDialog(),
+              const AddAssetDialog(),
             );
           },
           icon: const Icon(
