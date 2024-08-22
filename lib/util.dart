@@ -11,3 +11,7 @@ Future<void> registerControllers() async {
   // Register controllers
   Get.put(AssetsController());
 }
+
+String getCryptoImageURL(String name) {
+  return "https://raw.githubusercontent.com/ErikThiart/cryptocurrency-icons/master/128/${name.toLowerCase()}.png";
+}
